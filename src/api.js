@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://attendance-backend-v4e5.onrender.com",
+  baseURL: "https://attendance-backend-v4e5.onrender.com/api",
 });
 
 api.interceptors.request.use(

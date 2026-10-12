@@ -5,3 +5,12 @@ const api = axios.create({
 });
 
 export default api;
+
+export function errMsg(ex) {
+  return (
+    ex?.response?.data?.message ||
+    ex?.response?.data?.error ||
+    ex?.message ||
+    "Something went wrong. Please try again."
+  );
+}
